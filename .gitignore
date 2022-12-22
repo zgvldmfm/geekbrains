@@ -2,6 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
 
 ### VisualStudioCode ###
+bin
+obj
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -14,6 +16,7 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+*.csproj
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
