@@ -1,0 +1,44 @@
+
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное число
+//  и на выходе показывает вторую цифру этого числа.
+
+Console.Clear();
+int a = new Random().Next(100, 999);
+Console.WriteLine("Сгенерированно трёхзначное число: " + a);
+string stringNumber = Convert.ToString(a);
+Console.WriteLine("Вторая цифра этого числа: "+stringNumber[1]);
+
+
+// Задача 13: Напишите программу, которая выводит третью цифру заданного числа 
+// или сообщает, что третьей цифры нет.
+
+Console.Clear();
+int a = new Random().Next(1, 999);
+Console.WriteLine("Сгенерированно число: " + a);
+string anyNumberText = Convert.ToString(a);
+if (anyNumberText.Length > 2){
+    Console.WriteLine("Третья цифра: " + anyNumberText[2]);
+}
+else {
+    Console.WriteLine("Сгенерировано двузначное число. Третьей цифры нет.");
+}
+
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, 
+// обозначающую день недели, и проверяет, является ли этот день выходным.
+
+Console.Clear();
+Console.Write("Введи цифру, обозначающую день недели: ");
+int dayWeek = Convert.ToInt32(Console.ReadLine());
+
+void check (int dayWeek) {
+if (dayWeek == 6 || dayWeek == 7) {
+    Console.WriteLine("Вы выбрали выходной день");
+}
+    else if (dayWeek < 1 || dayWeek > 7) {
+    Console.WriteLine("Вы не выбрали день недели");
+}
+    else Console.WriteLine("Вы выбрали рабочий день");
+}
+
+check(dayWeek);
